@@ -12009,7 +12009,7 @@ Las queratosis actínicas (queratosis solares) y el carcinoma intraepitelial (en
 
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12089,7 +12089,7 @@ El dermatofibroma es una lesión benigna de la piel considerada como una prolife
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Perceptr&#243;n:-Ejemplo"><a href="http://neuralnetworksanddeeplearning.com/index.html">Perceptr&#243;n: Ejemplo</a><a class="anchor-link" href="#Perceptr&#243;n:-Ejemplo">&#182;</a></h3><p>No es  muy realista, pero es fácil de entender. Suponga que se acerca el fin de semana, y has oído que habrá un festival de la cerveza en tu ciudad. Te gusta el queso y estás tratando de decidir si ir o no al festival. Puede tomar su decisión sopesando tres factores:</p>
+<h3 id="El-Perceptr&#243;n"><a href="http://neuralnetworksanddeeplearning.com/index.html">El Perceptr&#243;n</a><a class="anchor-link" href="#El-Perceptr&#243;n">&#182;</a></h3><p>No es  muy realista, pero es fácil de entender. Suponga que se acerca el fin de semana, y has oído que habrá un festival de la cerveza en tu ciudad. Te gusta el queso y estás tratando de decidir si ir o no al festival. Puede tomar su decisión sopesando tres factores:</p>
 <p>¿El clima esta agradable?
 ¿Tu novio o novia quiere acompañarte?
 ¿Está el festival cerca del transporte público? (No tienes auto).</p>
@@ -12103,7 +12103,7 @@ El dermatofibroma es una lesión benigna de la piel considerada como una prolife
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Perceptr&#243;n:-Ejemplo"><a href="http://neuralnetworksanddeeplearning.com/index.html">Perceptr&#243;n: Ejemplo</a><a class="anchor-link" href="#Perceptr&#243;n:-Ejemplo">&#182;</a></h3><p>Puede utilizar perceptrones para modelar este tipo de toma de decisiones. En este caso el perceptrón viene dado por 
+<h3 id="El-Perceptr&#243;n"><a href="http://neuralnetworksanddeeplearning.com/index.html">El Perceptr&#243;n</a><a class="anchor-link" href="#El-Perceptr&#243;n">&#182;</a></h3><p>Puede utilizar perceptrones para modelar este tipo de toma de decisiones. En este caso el perceptrón viene dado por 
 <img src="../images/perceptron.png" alt=""></p>
 <p>Los números(pesos) 6,2,2 se han escogido de manera que reflejen el hecho que el clima es muy importante para usted, mucho más que si su novio o novia se unen a usted o la cercanía del transporte público. Finalmente, suponga que elige un umbral de 5 para el perceptrón. Con estas opciones, el perceptrón implementa el modelo de toma de decisiones deseado, generando 1 cuando el clima es bueno y 0 cuando el clima es malo. No importa el resultado si su novio o novia quiere ir, o si el transporte público está cerca.</p>
 <p>Al variar los pesos y el umbral, podemos obtener diferentes modelos de toma de decisiones. Por ejemplo, supongamos que, en cambio, elegimos un umbral de 3. El perceptrón decidirá que deberías ir al festival cuando el tiempo fuera bueno o cuando el festival estaba cerca del transporte público y tu novio o novia estaba dispuesto a unírsele. En otras palabras, sería un modelo diferente de toma de decisiones. Bajar el umbral significa que estás más dispuesto a ir al festival.</p>
@@ -12115,15 +12115,96 @@ El dermatofibroma es una lesión benigna de la piel considerada como una prolife
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Perceptr&#243;n:-Opciones-m&#225;s-complicadas"><a href="http://neuralnetworksanddeeplearning.com/index.html">Perceptr&#243;n: Opciones m&#225;s complicadas</a><a class="anchor-link" href="#Perceptr&#243;n:-Opciones-m&#225;s-complicadas">&#182;</a></h3><p>¡Obviamente, el perceptrón no es un modelo completo de toma de decisiones humanas! Pero lo que ilustra el ejemplo es cómo un perceptrón puede sopesar diferentes tipos de evidencia para tomar decisiones. Y debería parecer plausible que una compleja red de perceptrones pueda tomar decisiones bastante sutiles:</p>
+<h3 id="El-Perceptr&#243;n"><a href="http://neuralnetworksanddeeplearning.com/index.html">El Perceptr&#243;n</a><a class="anchor-link" href="#El-Perceptr&#243;n">&#182;</a></h3><p>¡Obviamente, el perceptrón no es un modelo completo de toma de decisiones humanas! Pero lo que ilustra el ejemplo es cómo un perceptrón puede sopesar diferentes tipos de evidencia para tomar decisiones. Y debería parecer plausible que una compleja red de perceptrones pueda tomar decisiones bastante sutiles:</p>
 <center> 
 <a href="http://neuralnetworksanddeeplearning.com/chap1.html">
 <img src="http://neuralnetworksanddeeplearning.com/images/tikz1.png"></a>  
 </center><p>En esta red, la primera columna de perceptrones (lo que llamaremos la primera <em>capa</em> de perceptrones) está tomando tres decisiones muy simples, sopesando la evidencia de entrada. ¿Qué pasa con los perceptrones en la segunda capa? Cada uno de esos perceptrones está tomando una decisión sopesando los resultados del primer nivel de toma de decisiones. De esta manera, los  perceptrones en la sucesivos están tomando decisiones a un nivel más complejo y más abstracto que los perceptrones de sus capas anteriores:  una red de múltiples capas de perceptrones puede participar en la toma de decisiones sofisticada.</p>
-<p>En la red de arriba, los perceptrones parecen tener múltiples salidas. De hecho, todavía son de salida única. Las flechas de salida múltiple son simplemente una forma útil de indicar que la salida de un perceptrón se está utilizando como entrada para varios otros perceptrones. Es menos difícil de manejar que dibujar una sola línea de salida que luego se divide.</p>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="El-Perceptr&#243;n"><a href="http://neuralnetworksanddeeplearning.com/index.html">El Perceptr&#243;n</a><a class="anchor-link" href="#El-Perceptr&#243;n">&#182;</a></h3><center> 
+<a href="http://neuralnetworksanddeeplearning.com/chap1.html">
+<img src="http://neuralnetworksanddeeplearning.com/images/tikz1.png" withd></a>  
+</center><p>En la red de arriba, los perceptrones parecen tener múltiples salidas. De hecho, todavía son de salida única. Las flechas de salida múltiple son simplemente una forma útil de indicar que la salida de un perceptrón se está utilizando como entrada para varios otros perceptrones. Es menos difícil de manejar que dibujar una sola línea de salida que luego se divide.</p>
+<p><em>Resulta ser que se pueden idear <strong>algoritmos de aprendizaje</strong> que pueden ajustar automáticamente los pesos de una red de neuronas artificiales. Esta sintonización ocurre en respuesta a estímulos externos, sin la intervención directa de un programador.</em></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="El-problema-con-los-perceptrones">El problema con los perceptrones<a class="anchor-link" href="#El-problema-con-los-perceptrones">&#182;</a></h3><p>Supongamos que tenemos una red de perceptrones que nos gustaría usar para aprender a resolver un problema, por ejemplo, las entradas a la red podrían ser los datos de píxeles de una imagen escaneada y manuscrita de un dígito. Y nos gustaría que la red aprendiera los pesos  para que la salida de la red clasifique correctamente el dígito. Supongamos que hacemos un pequeño cambio en algo de peso en la red. Lo que nos gustaría es que este pequeño cambio en el peso cause solo un pequeño cambio correspondiente en la salida de la red:</p>
+<p><center> 
+<a>
+<img src="../images/neurona-cambios-pequenos.png" width='70%'></a>  
+</center>
+Así la red 'aprendará' poco a poco. Desafortunadamente, esto no pasa con los percetrones: Cambios pequeños en los pesos no garantizan cambios pequeños en la salida.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Neurona-Sigmoide">Neurona Sigmoide<a class="anchor-link" href="#Neurona-Sigmoide">&#182;</a></h3><p>Podemos superar este problema introduciendo un nuevo tipo de neurona artificial llamada neurona sigmoide. Las neuronas sigmoides son similares a los perceptrones, pero se modifican de modo que pequeños cambios en sus pesos y sesgos causan solo un pequeño cambio en su producción. Ese es el hecho crucial que permitirá que una red de neuronas sigmoides aprendan. Se presentan las neuronas sigmoideas de la misma manera que describimos los perceptrones:</p>
+<center> 
+<a href="http://neuralnetworksanddeeplearning.com/chap1.html">
+<img src="http://neuralnetworksanddeeplearning.com/images/tikz0.png"></a>  
+</center><p>Al igual que un perceptrón, la neurona sigmoide tiene entradas, x1, x2, ... Pero en lugar de ser solo 0 o 1, estas entradas también pueden tomar cualquier valor entre 0 y 1. Entonces, por ejemplo, 0.638 ... es una entrada válida para una neurona sigmoide. Además, al igual que un perceptrón, la neurona sigmoide tiene pesos para cada entrada, w1, w2, ... y un sesgo general, b. Pero la salida no es 0 o 1.:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Neurona-Sigmoide">Neurona Sigmoide<a class="anchor-link" href="#Neurona-Sigmoide">&#182;</a></h3><center> 
+<a >
+<img src="../images/sigmoide-function.png" width=40%></a>  
+</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hola&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>hola
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
