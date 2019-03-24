@@ -1,29 +1,15 @@
 #!/usr/bin/env zsh
 
-#Create an html file .ipynb file
+#Create an .html from .ipynb 
 
-#parameters --to slides
 source ~/.zshrc
 
-jupyter nbconvert notebooks/main.ipynb $1 $2 \
+jupyter nbconvert notebooks/*.ipynb --to slides \
 --reveal-prefix=reveal.js \
 --SlidesExporter.reveal_theme=serif \
 --SlidesExporter.reveal_scroll=True  \
 --SlidesExporter.reveal_transition=none \
 
- mv notebooks/main*.html presentation/
-
-
-
-#jupyter nbconvert notebooks/lesson*.ipynb $1 $2 \
-#--reveal-prefix=reveal.js \
-#--SlidesExporter.reveal_theme=serif \
-#--SlidesExporter.reveal_scroll=True  \
-#--SlidesExporter.reveal_transition=none \
-
-# mv notebooks/lesson*.html presentation/
-
-
-
+mv notebooks/*.html presentation/
 
 
